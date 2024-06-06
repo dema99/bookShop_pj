@@ -7,7 +7,7 @@ document.getElementById('save').addEventListener ('click', () => {
         return
     }
 
-    fetch('http://localhost:8080/api/book',{
+    fetch('http://localhost:8080/api/category',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

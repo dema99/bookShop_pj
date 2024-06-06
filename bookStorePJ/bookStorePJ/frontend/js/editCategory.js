@@ -20,7 +20,7 @@ fetch('http://localhost:8080/api/category/' + id)
     .then(data => {
         breadcrumb.innerText = `${data.name}`
         bid.value = data.id
-        name.value = <data className="name"></data>
+        name.value = data.name
         updated.value = formatDate(data.updatedAt)
 
         document.getElementById('save').addEventListener('click', () => {
